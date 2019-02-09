@@ -14,7 +14,8 @@ $f3->set('DEBUG', 3);
 
 //define a default route
 $f3->route('GET /', function(){
-    //echo "<h1>Hello, World!</h1>";
+    $monster = new Monster("Frank");
+    $monster->attack();
     $view = new View();//add parenthesis for consistency
     echo $view->render('views/home.html');
 });

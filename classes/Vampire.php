@@ -14,7 +14,7 @@ class Vampire extends Monster
     function __construct($nameInput)
     {
         $this->_victims = 0;
-        $this->_vampireName = new Monster().$this->setName($nameInput);
+        $this->_vampireName = new Monster.$this->setName($nameInput);
     }
 
     function attack()

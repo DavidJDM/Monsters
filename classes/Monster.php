@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: davidkovalevich
+ * User: David and Adolfo
  * Date: 2/6/19
  * Time: 11:33 AM
  */
@@ -10,14 +10,14 @@ class Monster
 {
     private $_name;
 
-    function __construct($_name = "monster")
+    function __construct($_name = "?")
     {
-        $this->_name = $this->setName();
+        $this->setName();
     }
 
     function setName($nameInput)
     {
-        $_name = $nameInput;
+        $this->_name = $nameInput;
     }
 
     function getName()
