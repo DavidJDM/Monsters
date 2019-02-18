@@ -9,9 +9,9 @@ class Monster
 {
     private $_name;
 
-    function __construct($_name = "?")
+    function __construct($name = "?")
     {
-        $this->setName();
+        $this->setName($name);
     }
 
     function setName($nameInput)
