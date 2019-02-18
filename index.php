@@ -13,7 +13,7 @@ $f3 = Base::instance();
 $f3->set('DEBUG', 3);
 
 //define a default route
-$f3->route('GET /', function(){
+$f3->route('GET|POST /', function(){
     $monster = new Monster("Frank");
     $monster->attack();
     echo '<p>'.$monster-getName().'</p>';
