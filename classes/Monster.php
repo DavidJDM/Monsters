@@ -5,7 +5,6 @@
  * Date: 2/6/19
  * Time: 11:33 AM
  */
-
 class Monster
 {
     private $_name;

@@ -6,16 +6,15 @@
  * Time: 11:33 AM
  */
 
-class Vampire extends Monster
+class godzilla extends Monster
 {
-    //private $_vampireName;
+
     private $_victims;
 
     function __construct($name)
     {
-        //$this->_vampireName = new Monster.$this->setName($nameInput);
-        parent::__construct($name);
         $this->_victims = 0;
+        parent::__construct($name);
     }
 
     function attack()
@@ -28,4 +27,5 @@ class Vampire extends Monster
     {
         return $this->_victims;
     }
+
 }
