@@ -26,8 +26,8 @@ $f3->route('GET /', function(){
     $godzilla->attack();
     echo "<p>" . $godzilla->getVictims() . "</p>";
 
-    $view = new View();//add parenthesis for consistency
-    echo $view->render('views/home.html');
+    $template = new Template();//add parenthesis for consistency
+    echo $template->render('views/home.html');
 });
 
 //run fat free framework
